@@ -1,6 +1,6 @@
 # ⚛️ Sodium Cooled Reactor Vessel Radiation Shielding Model
 
-A simplified **1D slab attenuation model** in MATLAB, SciLab, and GNU Octave for visualising how neutron and gamma dose rates fall off through layered shielding on a sodium cooled fast reactor.
+A simplified **1D slab attenuation model** in MATLAB and SciLab for visualising how neutron and gamma dose rates fall off through layered shielding on a sodium cooled fast reactor.
 ---
 
 ## ⚠️ Scope and Limitations
