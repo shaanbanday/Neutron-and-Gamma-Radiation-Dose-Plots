@@ -1,18 +1,11 @@
 # ⚛️ Sodium Cooled Reactor Vessel Radiation Shielding Model
 
 A simplified **1D slab attenuation model** in MATLAB, SciLab, and GNU Octave for visualising how neutron and gamma dose rates fall off through layered shielding on a sodium cooled fast reactor.
-
-![MATLAB](https://img.shields.io/badge/MATLAB-R2020b%2B-orange)
-![Model](https://img.shields.io/badge/model-1D%20analytical-blue)
-![Status](https://img.shields.io/badge/status-visualisation%20aid-lightgrey)
-
 ---
 
 ## ⚠️ Scope and Limitations
 
-This is a **first-order analytical model**, not a transport simulation. It assumes straight-line attenuation with no buildup factors, scattering, streaming paths, or geometry effects.
-
-> It is **not** a substitute for the MCNP transport analysis. Treat the numbers as directional, useful for comparing shield configurations and prepping panels, not for demonstrating regulatory compliance.
+This is a **first-order analytical model**, not a transport simulation. It assumes straight-line attenuation with no buildup factors, scattering, streaming paths, or geometry effects. It is **not** a substitute for the MCNP transport analysis. Treat the numbers as directional, useful for comparing shield configurations and prepping panels, not for demonstrating regulatory compliance.
 
 The unshielded dose rate and the neutron/gamma split are placeholder baselines. Swap in real MCNP values before drawing any conclusions.
 
