@@ -1,6 +1,6 @@
 # ⚛️ Sodium Cooled Reactor Vessel Radiation Shielding Model
 
-A simplified **1D slab attenuation model** in MATLAB for visualising how neutron and gamma dose rates fall off through layered shielding on a sodium cooled fast reactor.
+A simplified **1D slab attenuation model** in MATLAB, SciLab, and GNU Octave for visualising how neutron and gamma dose rates fall off through layered shielding on a sodium cooled fast reactor.
 
 ![MATLAB](https://img.shields.io/badge/MATLAB-R2020b%2B-orange)
 ![Model](https://img.shields.io/badge/model-1D%20analytical-blue)
@@ -47,40 +47,3 @@ The 2 MeV fission gamma is the design driver, since it has the lowest mass atten
 | ☢️ Gamma energies | 478 keV, 1 MeV, 2 MeV | 478 keV from B-10(n,α)Li-7 capture |
 | 🎯 Design point | 6" poly + 6" lead | 12" total, 50/50 split |
 | 📏 Regulatory band | 5 to 100 mrem/hr | DOE-STD-1098-2017 envelope |
-
----
-
-## 📊 What It Generates
-
-Running the script produces three figures:
-
-1. **📉 Gamma attenuation through lead** — normalised gamma flux vs lead thickness on a log axis, one curve per energy, with the design thickness marked.
-2. **📈 Dose rate vs total shield thickness** — total, neutron, and gamma components vs combined thickness, with the DOE regulatory band shaded and the 12" design point flagged.
-3. **🌐 3D trade space** — dose rate surface over the full poly/lead thickness grid, with regulatory contours and the as-built design point called out.
-
----
-
-## 🚀 Running It
-
-```bash
-# Open MATLAB, then from the Command Window:
-Neutron_plots
-```
-
-Or open `Neutron_plots.m` in the editor and press **Run**. No additional toolboxes required, base MATLAB only.
-
-**Requirements:** MATLAB R2020b or newer (uses the `turbo` colormap).
-
----
-
-## 📚 Data Sources
-
-- **Gamma mass attenuation coefficients:** NIST XCOM
-- **Neutron removal cross sections:** Lamarsh, *Introduction to Nuclear Engineering*; Shultis & Faw, *Fundamentals of Nuclear Science and Engineering*
-- **Dose rate envelope:** DOE-STD-1098-2017
-
----
-
-## 📝 Notes
-
-To adapt this for a different configuration, edit the constants block at the top: material coefficients, thickness envelope, design point, and the baseline dose assumptions. Everything downstream recomputes from those values.
